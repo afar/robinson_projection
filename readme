@@ -1,0 +1,14 @@
+All code is licensed under the GPLv2. 
+
+Javascript library for projecting lng/lat coordinates to x,y coordinates using the Robinson projection. See it in use on our Spin the Globe feature on the http://afar.com home page.
+
+Ported to Javascript by AFAR Media from ActionScript code written by Chris Youderian (http://www.flashmap.org/robinson-projection-in-as3-gpl/).
+
+---
+
+Usage:
+
+myProjection = new Robinson(map_width, map_height);
+myProjection.project(lat, lng); // -> returns point object in the form {x:10, y:20}
+
+You can also use the projectToCSS() method in the same way to get a point which matches the CSS coordinate system.
